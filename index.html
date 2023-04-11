@@ -48,7 +48,7 @@
         <h1 class="top3h1">Top 3 rated professors :</h1>
         <div class="ratings">
 
-          <?php
+        <!--  <?php
           include("C:/xampp/htdocs/rate the professor website/database.php");
           $sql = "SELECT professor_name,professor_faculty,professor_rating,rating_count FROM professors ORDER BY professor_rating DESC, rating_count DESC LIMIT 3;";
           $result = mysqli_query($conn, $sql);
@@ -65,9 +65,9 @@
       </div>";
           }
           mysqli_close($conn);
-          ?>
+          ?>  -->
 
-          <!-- <div class='topcard'>
+          <div class='topcard'>
             <div class='teacher_info'>
               <div class='professorName'>" . $row['professor_name'] . "</div>
               <div class='professorFaculty'>" . $row['professor_faculty'] . "</div>
@@ -99,7 +99,7 @@
               <div class="ratingCount">157 ratings</div>
             </div>
           </div>
-        </div> -->
+        </div>
         </div>
       </div>
       <script src="index.js"></script>
