@@ -1,0 +1,327 @@
+.css-141buqv {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    /* display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-right: 50px;
+    /*  */
+    /*  */
+    /* flex-direction: column; */
+}
+
+.theInputsAboveTable {
+    /* box-sizing: border-box; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* width: 100%; */
+    margin-left: 20px;
+    margin-right: 20px;
+    /*  */
+    /*  display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.css-qgiiv8 {
+    position: relative;
+    min-width: 280px;
+    width: 100%;
+    margin-top: 24px;
+}
+
+@media (min-width: 45em) {
+    .css-qgiiv8 {
+        width: auto;
+    }
+}
+
+.css-x31xq5 {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-left: auto;
+    
+}
+
+.css-x31xq5>div,
+.css-x31xq5>button {
+    margin: 16px 16px 0 0;
+}
+
+@media (min-width: 45em) {
+    .css-x31xq5 {
+        margin-top: 24px;
+    }
+
+    .css-x31xq5>div,
+    .css-x31xq5>button {
+        margin: 0 8px 0 0;
+    }
+}
+
+.css-1ifm48 {
+    width: 100%;
+    padding: 8px 54px 8px 16px;
+    background: #f3f2ed;
+    border: 1px solid;
+    border-color: #799296;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: black;
+    outline: none;
+}
+
+.css-1ifm48:focus {
+    border-color: rgb(4, 96, 108);
+    ;
+}
+
+.css-7m2am6 {
+    position: absolute;
+    right: -1px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: rgb(4, 96, 108);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.css-7m2am6:hover {
+    background: rgba(4, 96, 108, 0.814);
+}
+
+
+.css-md9ile {
+    /* margin-right: 8px; */
+    position: relative;
+}
+
+.css-4cffwv {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.css-1d3uik7 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline-block;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background: #f3f2ed;
+    border: 1px solid #799296;
+    outline: none;
+    border-radius: 45px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #00323f;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+.css-1d3uik7:hover {
+    background: rgb(4, 96, 108);
+    ;
+    color: #f3f2ed;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 250px;
+    /* min-width : fit-content; */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 130px;
+    /* min-width : fit-content; */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+}
+
+.dropdown-content1 button,
+.dropdown-content2 button {
+    color: rgba(0, 0, 0, 0.618);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border: none;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid rgba(179, 179, 179, 0.623);
+}
+
+.dropdown-content1 button:hover,
+.dropdown-content2 button:hover {
+    background-color: #7992967e;
+}
+
+
+.dropdown-content1.show,
+.dropdown-content2.show {
+    display: block;
+}
+
+.Xtable {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    margin-top: 45px;
+}
+
+#resetButton {
+    align-self: flex-end;
+    width: fit-content;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    color: #919090;
+}
+
+#resetButton:hover {
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.td-rating {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 0;
+}
+
+th {
+    background-color: #f3f2ed;
+    font-size: 20px;
+}
+
+.td_name {
+    min-width: fit-content;
+    width: 350px;
+}
+
+.td_faculty {
+    min-width: fit-content;
+    width: 600px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    padding-left: 5px;
+}
+
+@media (max-width: 450px) {
+   .tableClass{
+      font-size: 14px;
+   }
+}

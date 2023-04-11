@@ -1,0 +1,442 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header_class {
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(4, 96, 108);
+  z-index: 100;
+  box-shadow: 0px 5px 5px rgba(4, 96, 108, 0.463);
+  height: 70px;
+}
+
+main {
+  margin-top: 100px;
+  /* Add margin to the top of the page content to account for the fixed header */
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.site_name {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: fit-content;
+  font-size: 20px;
+}
+
+@media (max-width: 450px) {
+  .site_name {
+    margin-top: 18px;
+    font-size: 15px;
+  }
+}
+
+.navbar_items {
+  width: fit-content;
+  margin-left: 0;
+  margin-right: 0;
+  position: absolute;
+  display: flex;
+  right: 5%;
+  top: 35%;
+}
+
+.nav-item {
+  width: fit-content;
+  margin-left: 18px;
+  font-size: 18px;
+}
+
+@media (max-width: 450px) {
+  .nav-item {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .navbar_items {
+    top: 38%;
+  }
+}
+
+
+
+p {
+  display: block;
+  margin-block-start: 10px;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 25px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.42;
+  height: fit-content;
+  margin-top: 75px;
+}
+
+@media (max-width: 1170px) {
+  .content {
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky+.content {
+  padding-top: 102px;
+}
+
+
+
+.dWGYca {
+  cursor: pointer;
+  position: relative;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(209, 209, 209);
+  box-sizing: border-box;
+  border-radius: 32px;
+  padding: 11px 52px 11px 16px;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+  text-decoration: none;
+  color: rgb(0, 50, 63);
+  transition: all 0.3s ease 0s;
+}
+
+.dWGYca:hover {
+  background: rgb(230, 230, 230);
+  text-decoration: none;
+}
+
+
+
+.dWGYca .icon-wrapper {
+  position: absolute;
+  right: -2px;
+  top: -3px;
+  width: 44px;
+  height: 44px;
+  background: rgb(4, 96, 108);
+  border-radius: 22px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.cards {
+  width: fit-content;
+}
+
+
+.top3h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 38px;
+}
+
+.ratings {
+  margin-top: 45px;
+}
+
+.contentANDcards {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 35px;
+  margin-left: 100PX;
+  margin-right: 40px;
+  flex-wrap: wrap;
+}
+
+.full-list-link {
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 1340px) {
+  .contentANDcards {
+    margin-left: 65PX;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1265px) {
+  .contentANDcards {
+    margin-left: 25PX;
+    gap: 10px;
+  }
+}
+
+
+@media (max-width: 1170px) {
+  .cards {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ratings {
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 880px) {
+
+  .content {
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 680px) {
+
+  .content {
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .content {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  .dWGYca {
+    line-height: 5px;
+    font-size: 15px;
+    width: 100px;
+  }
+  .dWGYca .icon-wrapper {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+
+.topcard {
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: rgba(4, 96, 108, 0.103);
+  min-width: 60%;
+  /* width: 70%; */
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.teacher_info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+}
+
+.professorName {
+  font-size: 20px;
+  font-style: normal;
+  line-height: 24px;
+  margin-top: 17px;
+  margin-bottom: 9px;
+  text-align: left;
+  font-weight: 800;
+}
+
+.professorFaculty {
+  line-height: 16px;
+  margin-bottom: 11px;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.721);
+}
+
+.ratingtop3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  margin-top: 0px;
+}
+
+.ratingNumberGREEN {
+  width: 60px;
+  height: 60px;
+  background-color: green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 5px;
+  margin-top: 10px;
+}
+
+.ratingNumberYELLOW {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(233, 164, 13);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 5px;
+  margin-top: 10px;
+}
+
+.ratingNumberRED {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(208, 68, 68);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 5px;
+  margin-top: 10px;
+}
+
+.ratingCount {
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+}
+
+
+@media (max-width: 450px) {
+  .top3h1 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .content {
+    font-size: 1.3rem;
+    margin-top: 15px;
+  }
+
+  .full-list-link {
+    margin-top: 30px;
+  }
+  .dWGYca {
+    line-height: 8px;
+    font-size: 18px;
+    width: 118px;
+    text-align: left;
+    
+  }
+  .dWGYca .icon-wrapper {
+    width: 36px;
+    height: 36px;
+  }
+  .contentANDcards{
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+  .cards{
+    width: 300px;
+  }
+
+  .topcard{
+    margin: 0%;
+    margin-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 5px;
+
+  }
+
+  .ratingtop3{
+    width: 85px;
+
+  }
+
+  .ratingCount{
+    margin-top: 5px;
+    font-size: 15px;
+  }
+
+  .professorName{
+    margin-top: 4px;
+    margin-bottom: 0;
+
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .professorFaculty{
+    margin-top: 5px;
+    margin-bottom: 0;
+
+    font-weight: 600;
+    font-size: 14px;
+
+
+  }
+}
