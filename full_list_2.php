@@ -79,7 +79,7 @@
           <th>Faculty</th>
           <th class="td-rating">Rating</th>
         </tr>
-        <?php
+       <!-- --> <?php
         include("C:/xampp/htdocs/rate the professor website/database.php");
         $sql = "SELECT professor_name,professor_faculty,professor_rating,rating_count FROM professors";
         $result = mysqli_query($conn, $sql);
@@ -98,7 +98,83 @@
           }
         }
         mysqli_close($conn);
-        ?>
+        ?> -->
+        
+        <tr>
+          <td class="td_name">Prof. Walter white</td>
+          <td class="td_faculty">Exact sciences, natural sciences and life sciences</td>
+          <td class="td-rating">
+            <div class="rating">
+              <div class="ratingNumberGREEN">8.0 &#9733</div>
+              <div class="ratingCount">598 ratings</div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="td_name">Prof. Skyler white yo</td>
+          <td class="td_faculty">Economics, management and commerce</td>
+          <td class="td-rating">
+            <div class="rating">
+              <div class="ratingNumberGREEN">7.0 &#9733</div>
+              <div class="ratingCount">18 ratings</div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="td_name">Prof. walter junior </td>
+          <td class="td_faculty">Institute of sciences and technics of physical and sport activities</td>
+          <td class="td-rating">
+            <div class="rating">
+              <div class="ratingNumberRED">3.8 &#9733</div>
+              <div class="ratingCount">51 ratings</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="td_name">Prof. saul goodman</td>
+          <td class="td_faculty">Law and political sciences</td>
+          <td class="td-rating">
+            <div class="rating">
+              <div class="ratingNumberYELLOW">6.8 &#9733</div>
+              <div class="ratingCount">1241 ratings</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="td_name">Prof. jesse pinkman</td>
+          <td class="td_faculty">Economics, management and commerce</td>
+          <td class="td-rating">
+            <div class="rating">
+              <div class="ratingNumberYELLOW">6.9 &#9733</div>
+              <div class="ratingCount">420 ratings</div>
+            </div>
+          </td>
+        </tr>
+        <!--        -->
+        <!--        -->
+        <tr>
+          <td class="td_name">Prof. gus fring</td>
+          <td class="td_faculty">Economics, management and commerce</td>
+          <td class="td-rating">
+            <div class="rating">
+              <div class="ratingNumberGREEN">9.9 &#9733</div>
+              <div class="ratingCount">867 ratings</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="td_name">Prof. lalu salamanka</td>
+          <td class="td_faculty">Institute of sciences and technics of physical and sport activities</td>
+          <td class="td-rating">
+            <div class="rating">
+              <div class="ratingNumberGREEN">8.2 &#9733</div>
+              <div class="ratingCount">512 ratings</div>
+            </div>
+          </td>
+        </tr>
+        
       </table>
     </div>
     <script>
