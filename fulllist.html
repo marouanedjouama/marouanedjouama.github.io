@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--bug A1: the function filterTable() executes correctly the first time only, then i'll have to reset the table for it to work; -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="full_list.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Full list</title>
+</head>
+
+<body>
+  <main>
+    <div class="header_class" id="header_id">
+
+      <div>
+        <h2 class="site_name">rate the professor</h2>
+      </div>
+
+      <div class="navbar_items">
+        <div class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#home">Account</a>
+        </div>
+      </div>
+    </div>
+    <div class="css-141buqv">
+      <div class="theInputsAboveTable">
+        <div class="css-qgiiv8">
+          <input placeholder="Enter name" class="css-1ifm48" value="" id="search-input">
+          <button class="css-7m2am6" id="search-button">
+            <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.75 2.167c-4.175 0-7.583 3.408-7.583 7.583 0 4.175 3.408 7.583 7.583 7.583a7.538 7.538 0 0 0 4.955-1.862l.462.462v1.4l6.5 6.5 2.166-2.166-6.5-6.5h-1.4l-.462-.461a7.539 7.539 0 0 0 1.862-4.956c0-4.175-3.408-7.583-7.583-7.583Zm0 2.166a5.4 5.4 0 0 1 5.417 5.417 5.4 5.4 0 0 1-5.417 5.417A5.4 5.4 0 0 1 4.333 9.75 5.4 5.4 0 0 1 9.75 4.333Z"
+                fill="#F3F2ED"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="css-x31xq5">
+          <div class="css-md9ile">
+            <div class="css-4cffwv">
+              <div class="dropdown">
+                <button class="css-1d3uik7" onclick="toggleDropdown('dropdownContent1')">Faculty </button>
+                <div class="dropdown-content1" id="dropdownContent1">
+                  <button id="all-faculties"> All</button>
+                  <button id="ENLS"> Exact sciences, natural sciences and life sciences</button>
+                  <button id="EMC"> Economics, management and commerce</button>
+                  <button id="ST"> Sciences and technology</button>
+                  <button id="LPS"> Law and political sciences</button>
+                  <button id="SSH"> Social sciences and humanities</button>
+                  <button id="ISTPSA"> Institute of sciences and technics of physical and sport activities</button>
+                  <button id="LL"> Literature and languages</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="css-md9ile">
+            <div class="css-4cffwv">
+              <div class="dropdown">
+                <button class="css-1d3uik7" onclick="toggleDropdown('dropdownContent2')">Order</button>
+                <div class="dropdown-content2" id="dropdownContent2">
+                  <button id="sort-best">Best rated</button>
+                  <button id="sort-worst">Worst rated</button>
+                  <button id="sort-popular">Most popular</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Xtable">
+      <BUtton id="resetButton">reset</BUtton>
+      <table id="tableID" class="tableClass">
+        <tr>
+          <th>Professor</th>
+          <th>Faculty</th>
+          <th colspan="2" class="th-rating">Rating</th>
+        </tr>
+        <tr>
+          <td class="td_name">Prof. Walter white</td>
+          <td class="td_faculty">Exact sciences, natural sciences and life sciences</td>
+          <td class="td-rating">
+            <div class="rating">
+              <div class="ratingNumberGREEN">8.0 &#9733</div>
+              <div class="ratingCount">598 ratings</div>
+            </div>
+            <button class='rate_button'>rate&#9734</button>
+            <div class="rate_popup">
+              <button class="close_rate_popup">&times</button>
+              <div class="the10stars">
+                <button class="rating_star" id="star1">&#9734</button>
+                <button class="rating_star" id="star2">&#9734</button>
+                <button class="rating_star" id="star3">&#9734</button>
+                <button class="rating_star" id="star4">&#9734</button>
+                <button class="rating_star" id="star5">&#9734</button>
+                <button class="rating_star" id="star6">&#9734</button>
+                <button class="rating_star" id="star7">&#9734</button>
+                <button class="rating_star" id="star8">&#9734</button>
+                <button class="rating_star" id="star9">&#9734</button>
+                <button class="rating_star" id="star10">&#9734</button>
+              </div>
+              <button class="secondRateBtn">Rate</button>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="td_name">Prof. Skyler white yo</td>
+          <td class="td_faculty">Economics, management and commerce</td>
+          <td class="td-rating">
+            <div class="rating">
+              <div class="ratingNumberGREEN">7.0 &#9733</div>
+              <div class="ratingCount">18 ratings</div>
+            </div>
+            <button class='rate_button'>rate&#9734</button>
+            <div class="rate_popup">hello
+              <!-- <a class="close_popup" href="#close">&times</a> -->
+              <button class="close_rate_popup">&times</button>
+            </div>
+
+          </td>
+        </tr>
+
+        <tr>
+          <td class="td_name">Prof. walter junior </td>
+          <td class="td_faculty">Institute of sciences and technics of physical and sport activities</td>
+          <td class="td-rating">
+            <div class="rating">
+              <div class="ratingNumberRED">3.8 &#9733</div>
+              <div class="ratingCount">51 ratings</div>
+            </div>
+            <button class='rate_button'>rate&#9734</button>
+            <div class="rate_popup">hello
+              <!-- <a class="close_popup" href="#close">&times</a> -->
+              <button class="close_rate_popup">&times</button>
+            </div>
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="td_name">Prof. saul goodman</td>
+          <td class="td_faculty">Law and political sciences</td>
+          <td class="td-rating">
+            <div class="rating">
+              <div class="ratingNumberYELLOW">6.8 &#9733</div>
+              <div class="ratingCount">1241 ratings</div>
+            </div>
+            <button class='rate_button'>rate&#9734</button>
+            <div class="rate_popup">hello
+              <!-- <a class="close_popup" href="#close">&times</a> -->
+              <button class="close_rate_popup">&times</button>
+            </div>
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="td_name">Prof. jesse pinkman</td>
+          <td class="td_faculty">Economics, management and commerce</td>
+          <td class="td-rating">
+            <div class="rating">
+              <div class="ratingNumberYELLOW">6.9 &#9733</div>
+              <div class="ratingCount">420 ratings</div>
+            </div>
+            <button class='rate_button'>rate&#9734</button>
+            <div class="rate_popup">hello
+              <!-- <a class="close_popup" href="#close">&times</a> -->
+              <button class="close_rate_popup">&times</button>
+            </div>
+          </td>
+        </tr>
+        <!--        -->
+        <!--        -->
+        <tr>
+          <td class="td_name">Prof. gus fring</td>
+          <td class="td_faculty">Economics, management and commerce</td>
+          <td class="td-rating">
+            <div class="rating">
+              <div class="ratingNumberGREEN">9.9 &#9733</div>
+              <div class="ratingCount">867 ratings</div>
+            </div>
+            <button class='rate_button'>rate&#9734</button>
+            <div class="rate_popup">hello
+              <!-- <a class="close_popup" href="#close">&times</a> -->
+              <button class="close_rate_popup">&times</button>
+            </div>
+          </td>
+
+        </tr>
+        <tr>
+          <td class="td_name">Prof. lalu salamanka</td>
+          <td class="td_faculty">Institute of sciences and technics of physical and sport activities</td>
+          <td class="td-rating">
+            <div class="rating">
+              <div class="ratingNumberGREEN">8.2 &#9733</div>
+              <div class="ratingCount">512 ratings</div>
+            </div>
+            <button class='rate_button'>rate&#9734</button>
+            <div class="rate_popup">hello
+              <!-- <a class="close_popup" href="#close">&times</a> -->
+              <button class="close_rate_popup">&times</button>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="full_list.js"></script>
+  </main>
+</body>
+
+</html>
